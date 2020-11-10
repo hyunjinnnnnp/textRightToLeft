@@ -1,0 +1,41 @@
+@import "reset.css";
+* {
+  box-sizing: border-box;
+}
+.red-box {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(156, 4, 4);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-container {
+  position: relative;
+
+  width: 60%;
+  height: 60%;
+  /* border: 1px dashed black; */
+}
+.text,
+.textClone {
+  /* width: 100%; */
+  /* height: 100%; */
+  /* border: 1px dashed blue; */
+  color: black;
+  display: inline-block;
+  position: absolute;
+  font-size: 3rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.text::after {
+  content: "ㅈㄷㄹㅈㄷㄹㄷㅈ";
+}
+
+.textClone {
+  /* border: 1px solid white; */
+}
